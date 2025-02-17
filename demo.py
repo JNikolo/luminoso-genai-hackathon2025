@@ -3,7 +3,7 @@ import pandas as pd
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph.prebuilt import create_react_agent
 from langchain_core.tools import tool
-from langchain_openai import ChatOpenAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv
 from langchain.schema import HumanMessage, AIMessage, SystemMessage
 
@@ -11,10 +11,12 @@ from langchain.schema import HumanMessage, AIMessage, SystemMessage
 # Load environmental variables
 load_dotenv()
 
-st.title("Claude")
+st.title("Gemini")
 
 # Set LLM model: gpt-4o-mini
-model = ChatOpenAI(model="gpt-4o-mini", streaming=True)
+#model = ChatOpenAI(model="gpt-4o-mini", streaming=True)
+
+model = ChatGoogleGenerativeAI(model="gemini-2.0-flash", streaming=True)
 
 # Read from csv containing review summaries
 df = pd.read_csv("summarized_reviews.csv")
@@ -73,7 +75,8 @@ config = {"configurable": {"thread_id": "daylight-testing"}}
 
 
 # Create ReAct LLM to be run
-agent_executor = create_react_agent(model, tools, checkpointer=memory, prompt=prompt)
+if "agent_executor" not in st.session_state:
+    st.session_state.agent_executor = create_react_agent(model, tools, checkpointer=memory, prompt=prompt)
 
 
 if "openai_model" not in st.session_state:
@@ -105,7 +108,7 @@ if user_input := st.chat_input("Enter query"):
         final_response = None
         
         # Stream the response
-        for chunk in agent_executor.stream(
+        for chunk in st.session_state.agent_executor.stream(
             {"messages": [HumanMessage(content=user_input)]}, config
         ):
             if isinstance(chunk, dict):

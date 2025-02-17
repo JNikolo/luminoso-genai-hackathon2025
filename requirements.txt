@@ -1,6 +1,6 @@
-langchain==0.3.18
+langchain==0.3.19
 langchain_core==0.3.35
-langchain_openai==0.3.6
+langchain_google_genai==2.0.9
 langgraph==0.2.73
 pandas==2.2.3
 python-dotenv==1.0.1
