@@ -11,7 +11,14 @@ from langchain.schema import HumanMessage, AIMessage, SystemMessage
 # Load environmental variables
 load_dotenv()
 
-st.title("Phaeton")
+st.set_page_config(
+    page_title="Phaeton",
+    page_icon="☀️",
+)
+
+st.title("Phaeton ☀️")
+
+
 
 # Set LLM model: gpt-4o-mini
 #model = ChatOpenAI(model="gpt-4o-mini", streaming=True)
@@ -94,7 +101,7 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 # Input from user
-if user_input := st.chat_input("Enter query"):
+if user_input := st.chat_input("Talk to Phaeton"):
     # Add user message to chat history
     st.session_state.messages.append({"role": "user", "content": user_input})
     
