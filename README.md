@@ -2,13 +2,20 @@
 
 This is the repository for "The Homies" team project for the Luminoso GenAI 2025 Virtual Hackathon
 
-# Table of Contents
-- About
-- Getting Started
-- Usage
+Authors: [Mohammed Uddin](https://www.linkedin.com/in/muddint/), [Jair Ruiz](www.linkedin.com/in/jruizzz), [Kazi Sadman](www.linkedin.com/in/kazi-s)
+
+### Table of Contents
+- <a href="#about">About</a>
+- <a href="#getting-started">Getting Started</a>
+- <a href="#usage">Usage</a>
+
 
 # About
 We built a chatbot that can help customer experience analysts question review databases and receive insights and suggestions.
+
+<!-- <div align="center"> -->
+  <img src="img/demo1.jpg" width="600">
+<!-- </div> -->
 
 # Getting Started
 Clone the project

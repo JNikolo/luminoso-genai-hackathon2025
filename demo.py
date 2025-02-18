@@ -11,7 +11,7 @@ from langchain.schema import HumanMessage, AIMessage, SystemMessage
 # Load environmental variables
 load_dotenv()
 
-st.title("Gemini")
+st.title("Phaeton")
 
 # Set LLM model: gpt-4o-mini
 #model = ChatOpenAI(model="gpt-4o-mini", streaming=True)
