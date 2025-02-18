@@ -1,6 +1,6 @@
 # Phaeton
 
-This is the repository for "The Homies" team project for the Luminoso GenAI 2025 Virtual Hackathon
+This is the repository for "The Homies" team project for the Luminoso GenAI 2025 Virtual Hackathon. [Click here to try](https://thehomies.streamlit.app/)
 
 Authors: [Mohammed Uddin](https://www.linkedin.com/in/muddint/), [Jair Ruiz](www.linkedin.com/in/jruizzz), [Kazi Sadman](www.linkedin.com/in/kazi-s)
 
