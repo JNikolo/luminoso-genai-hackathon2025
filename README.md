@@ -1,6 +1,8 @@
 # Phaeton
 
-This is the repository for "The Homies" team project for the Luminoso GenAI 2025 Virtual Hackathon. [Click here to try](https://thehomies.streamlit.app/)
+This is the repository for "The Homies" team project for the Luminoso GenAI 2025 Virtual Hackathon. 
+
+[Live Link](https://thehomies.streamlit.app/)
 
 Authors: [Mohammed Uddin](https://www.linkedin.com/in/muddint/), [Jair Ruiz](www.linkedin.com/in/jruizzz), [Kazi Sadman](www.linkedin.com/in/kazi-s)
 
@@ -11,7 +13,9 @@ Authors: [Mohammed Uddin](https://www.linkedin.com/in/muddint/), [Jair Ruiz](www
 
 
 # About
-We built a chatbot that can help customer experience analysts question review databases and receive insights and suggestions.
+An agentic AI chatbot designed to assist customer experience analysts in questioning customer reviews and gaining valuable insights and suggestions.
+
+By leveraging AI for review summarization and an agent-powered LLM for efficient filtering and analysis, this tool streamlines the review evaluation process.
 
 <!-- <div align="center"> -->
   <img src="img/demo1.jpg" width="600">
